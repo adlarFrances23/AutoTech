@@ -7,7 +7,7 @@ from playwright.sync_api import sync_playwright
 
 class Ui_Form(object):
     def setupUi(self, Form):
-        Form.setObjectName("AutoTech")
+        Form.setObjectName("Form")
         Form.resize(579, 354)
         Form.setStyleSheet("*{\n"
                            "background-color: #66a3ff;}")
