@@ -1,4 +1,14 @@
+import subprocess
+import sys
 
+def install(package):
+    subprocess.check_call([sys.executable, '-m', 'pip', 'install', package])
+
+# Example usage
+if __name__ == "__main__":
+    packages = ["PyQt6", "numpy", "requests"]  # List of packages to install
+    for package in packages:
+        install(package)
 import time
 import csv
 from PyQt6 import QtCore, QtGui, QtWidgets
