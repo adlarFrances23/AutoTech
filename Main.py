@@ -16,7 +16,7 @@ class MainWindow(QWidget):
         self.label.setAlignment(Qt.AlignmentFlag.AlignCenter)
         layout.addWidget(self.label)
 
-        self.button = QPushButton("Clicasdda   Me")
+        self.button = QPushButton("Click Me")
         self.button.clicked.connect(self.on_button_clicked)
         layout.addWidget(self.button)
 
