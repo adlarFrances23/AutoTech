@@ -6,7 +6,7 @@ class MainWindow(QWidget):
     def __init__(self):
         super().__init__()
 
-        self.setWindowTitle("PyQt6 Example")
+        self.setWindowTitle("Example Example")
         self.setGeometry(100, 100, 400, 300)
 
         # Layout and Widgets
