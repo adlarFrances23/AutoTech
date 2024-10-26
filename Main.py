@@ -6,7 +6,7 @@ class MainWindow(QWidget):
     def __init__(self):
         super().__init__()
 
-        self.setWindowTitle("plasfasfasfe")
+        self.setWindowTitle("plae")
         self.setGeometry(100, 100, 400, 300)
 
         # Layout and Widgets
@@ -16,7 +16,7 @@ class MainWindow(QWidget):
         self.label.setAlignment(Qt.AlignmentFlag.AlignCenter)
         layout.addWidget(self.label)
 
-        self.button = QPushButton("Click Me")
+        self.button = QPushButton("Click Me Hello")
         self.button.clicked.connect(self.on_button_clicked)
         layout.addWidget(self.button)
 
@@ -24,7 +24,7 @@ class MainWindow(QWidget):
         self.setLayout(layout)
 
     def on_button_clicked(self):
-        self.label.setText("Bawsfidhoadnkvasccked!")
+        self.label.setText("Bawsccked!")
 
 app = QApplication(sys.argv)
 window = MainWindow()
