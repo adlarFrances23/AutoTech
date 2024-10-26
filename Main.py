@@ -16,7 +16,7 @@ class MainWindow(QWidget):
         self.label.setAlignment(Qt.AlignmentFlag.AlignCenter)
         layout.addWidget(self.label)
 
-        self.button = QPushButton("Click Me")
+        self.button = QPushButton("Click  to sTART Me")
         self.button.clicked.connect(self.on_button_clicked)
         layout.addWidget(self.button)
 
@@ -24,7 +24,7 @@ class MainWindow(QWidget):
         self.setLayout(layout)
 
     def on_button_clicked(self):
-        self.label.setText("Button Clicked!")
+        self.label.setText("Bawsfidhoadnkvasccked!")
 
 app = QApplication(sys.argv)
 window = MainWindow()
