@@ -9,6 +9,7 @@ if __name__ == "__main__":
     packages = ["PyQt6", "numpy", "requests"]  # List of packages to install
     for package in packages:
         install(package)
+        print("Install PYQT6")
 import time
 import csv
 from PyQt6 import QtCore, QtGui, QtWidgets
