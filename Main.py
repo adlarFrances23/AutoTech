@@ -12,7 +12,7 @@ class MainWindow(QWidget):
         # Layout and Widgets
         layout = QVBoxLayout()
 
-        self.label = QLabel("Hello, asdf!")
+        self.label = QLabel("Hello")
         self.label.setAlignment(Qt.AlignmentFlag.AlignCenter)
         layout.addWidget(self.label)
 
