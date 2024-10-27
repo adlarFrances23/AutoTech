@@ -182,12 +182,10 @@ class Ui_Form(object):
             page = context.new_page()
 
             # Navigate to the Yahoo mail page
-            page.goto('https://mail.yahoo.com/', wait_until="networkidle")
+            page.goto('https://mail.yahoo.com', { timeout: 60000, waitUntil: 'networkidle2' });
             page.wait_for_timeout(10000)  # Adjust timeout as needed
 
             try:
-                page.goto('https://mail.yahoo.com/', wait_until="networkidle")
-                # Click on Mail link (assuming this is where you want to navigate)
                 page.click('xpath=//*[@id="app"]/div[2]/div/div[1]/nav/div/div[3]/div[1]/ul/li[7]/div')
                 page.wait_for_timeout(9000)  # Adjust timeout as needed
 
@@ -238,7 +236,7 @@ class Ui_Form(object):
         page = context.new_page()
 
         try:
-            page.goto('https://mail.yahoo.com/', wait_until="networkidle")
+            page.goto('https://mail.yahoo.com', { timeout: 60000, waitUntil: 'networkidle2' });
             # Click on Mail link (assuming this is where you want to navigate)
             page.click('xpath=//*[@id="app"]/div[2]/div/div[1]/nav/div/div[3]/div[1]/ul/li[7]/div')
             page.wait_for_timeout(9000)  # Adjust timeout as needed
