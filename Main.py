@@ -182,7 +182,7 @@ class Ui_Form(object):
             page = context.new_page()
 
             # Navigate to the Yahoo mail page
-            page.goto('https://mail.yahoo.com', { timeout: 60000, waitUntil: 'networkidle2' });
+            page.goto('https://mail.yahoo.com');
             page.wait_for_timeout(10000)  # Adjust timeout as needed
 
             try:
